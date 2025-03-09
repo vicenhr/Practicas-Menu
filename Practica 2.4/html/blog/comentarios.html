@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="P&aacute;gina de comentarios del Blog de la Gu&iacute;a Tur&iacute;stica.">
+    <meta name="keywords" content="comentarios, blog, gu&iacute;a tur&iacute;stica, opiniones">
+    <title>Comentarios</title>
+    <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1>Comentarios del Blog</h1>
+    </header>
+    <nav>
+        <a href="../guia_turistica/inicio.html">Inicio</a>
+        <a href="../guia_turistica/lugares.html">Lugares de Inter&eacute;s</a>
+        <a href="../guia_turistica/mapa.html">Mapa</a>
+        <a href="../guia_turistica/contacto.html">Contacto</a>
+        <a href="blog.html">Blog</a>
+        <a href="../../../index.html">Menu</a>
+    </nav>
+    <main>
+        <section>
+                <h2>Deja tu Comentario</h2>
+                <form action="procesar_comentario.php" method="POST">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="comentario">Comentario:</label>
+                    <textarea id="comentario" name="comentario" rows="5" required></textarea>
+                    <button type="submit">Enviar Comentario</button>
+                </form>
+        </section>
+        <section>
+            <h2>Comentarios Recientes</h2>
+            <div class="comentario">
+                <p><strong>Juan P&eacute;rez</strong> <em>01/03/2025</em></p>
+                <p>Excelente gu&iacute;a tur&iacute;stica, muy informativa y pr&aacute;ctica. Me encant&oacute; la
+                    secci&oacute;n de lugares de inter&eacute;s.</p>
+            </div>
+            <div class="comentario">
+                <p><strong>Mar&iacute;a Garc&iacute;a</strong> <em>28/02/2025</em></p>
+                <p>Muy buen contenido, la informaci&oacute;n es muy &uacute;til para planificar mi pr&oacute;xima visita
+                    a la ciudad.</p>
+            </div>
+        </section>
+    </main>
+    <aside>
+        <h3>Informaci&oacute;n Adicional</h3>
+        <p>Para m&aacute;s detalles sobre la gu&iacute;a tur&iacute;stica, visita nuestra p&aacute;gina de <a
+                href="../guia_turistica/contacto.html">Contacto</a> o suscr&iacute;bete al bolet&iacute;n.</p>
+    </aside>
+    <footer>
+        <p>&copy; 2025 Gu&iacute;a Tur&iacute;stica de Puebla. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
